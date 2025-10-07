@@ -23,7 +23,7 @@ class Solution {
     }
 }
 //2
-lass Solution {
+class Solution {
     public int[] searchRange(int[] nums, int target) {
         
     int first = -1, last = -1;
