@@ -1,0 +1,37 @@
+// Online Java Compiler
+// Use this editor to write, compile and run your Java code online
+
+class Main {
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        int t=sc.nextInt();
+        while(t>0){
+            int n=sc.nextInt();
+            int a=sc.nextInt();
+            int b=sc.nextInt();
+            int c=sc.nextInt();
+            int d=sc.nextInt();
+            int minGrainTotal = n * (a - b);
+        int maxGrainTotal = n * (a + b);
+
+        
+        int minPackage = c - d;
+        int maxPackage = c + d;
+
+       
+        int overlapMin = Math.max(minGrainTotal, minPackage);
+        int overlapMax = Math.min(maxGrainTotal, maxPackage);
+
+        if (overlapMin <= overlapMax) {
+            System.out.println("Yes");
+        } else {
+            System.out.println("No");
+        }
+
+        sc.close();
+    }
+}
+
+
+
+        
